@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eshifumbi Furniture - About Us</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .logo img {
+      height: 40px;
+      filter: brightness(0) invert(1);
+      cursor: pointer;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .menu-btn {
+      font-size: 2.2rem;
+      color: #fcbf49;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    .menu-btn:hover {
+      background-color: #222;
+    }
+    .dropdown {
+      display: none;
+      position: fixed;
+      top: 60px;
+      right: 20px;
+      background-color: #000;
+      border-radius: 5px;
+      min-width: 180px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      z-index: 100;
+    }
+    .dropdown.show {
+      display: block;
+    }
+    .dropdown a {
+      display: block;
+      padding: 12px 20px;
+      color: #fcbf49;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .dropdown a:hover {
+      background-color: #333;
+    }
+
+    /* Main Content */
+    main {
+      flex-grow: 1;
+      padding: 100px 30px 50px;
+      max-width: 700px;
+      margin: 0 auto 50px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      color: #000;
+    }
+    section {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+    section h2 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #000;
+      font-weight: 700;
+    }
+    section p {
+      margin-bottom: 15px;
+    }
+
+    /* Team Section */
+    .team {
+      margin-top: 40px;
+    }
+    .team-members {
+      display: flex;
+      gap: 20px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .member {
+      background-color: #fafafa;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 220px;
+      text-align: center;
+      flex: 1 1 200px;
+    }
+    .member img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 70%;
+      margin-bottom: 12px;
+      border: 3px solid #fcbf49;
+    }
+    .member h3 {
+      margin-bottom: 6px;
+      font-size: 1.2rem;
+      color: #000;
+    }
+    .member p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000;
+      color: #fcbf49;
+      text-align: center;
+      padding: 20px 15px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    footer a {
+      color: #fcbf49;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      main {
+        padding: 100px 20px 40px;
+        width: 90%;
+      }
+      .team-members {
+        flex-direction: column;
+        align-items: center;
+      }
+      .member {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="image/bed1.jpg" alt="Eshifumbi Furniture Logo" /></a>
+    </div>
+    <nav>
+      <button class="menu-btn" aria-label="Open navigation menu">&#x22EE;</button>
+    </nav>
+    <div class="dropdown" id="dropdown-menu" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="order.html">Order</a>
+      <a href="checkout.html">checkout</a>
+      <a href="contact.html">Contact</a>
+      <a href="review.html">Review</a>
+      <a href="about.html">About</a>
+      <a href="terms.html">Terms</a>
+      <a href="return.html">Return</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </header>
+
+  <main role="main">
+    <h1>About Us</h1>
+    <section>
+      <h2>Our Story</h2>
+      <p>Eshifumbi Furniture started with a simple mission: to provide quality, affordable furniture that transforms houses into homes. Founded by passionate craftsmen, we combine traditional skills with modern designs to offer products that last and inspire.</p>
+
+      <h2>Our Vision</h2>
+      <p>We aim to be the leading furniture brand known for exceptional quality, outstanding customer service, and innovative designs that cater to every lifestyle.</p>
+
+      <h2>Why Choose Us?</h2>
+      <p>We prioritize customer satisfaction by ensuring all our products undergo strict quality checks. Our friendly team is always ready to assist you from browsing to delivery, making your shopping experience seamless and enjoyable.</p>
+
+      <h2>Contact Information</h2>
+      <p>If you have any questions or want to learn more about our products and services, please visit our <a href="contact.html">Contact Page</a> or reach out directly via phone or email.</p>
+    </section>
+
+    <section class="team">
+      <h2>Meet Our Team</h2>
+      <div class="team-members">
+        <div class="member">
+          <img src="image/ceo.jpg" alt="CEO - Eshifumbi Furniture" />
+          <h3>Tyson Juma</h3>
+          <p>Chief Executive Officer</p>
+          <p>Tyson leads Eshifumbi Furniture with over 15 years of experience in furniture design and business management, driving innovation and quality.</p>
+        </div>
+        <div class="member">
+          <img src="image/logistics.jpg" alt="Logistics Manager - Eshifumbi Furniture" />
+          <h3>Muse Juma</h3>
+          <p>Logistics Manager</p>
+          <p>Muse ensures all orders are delivered on time and manages supply chain operations smoothly to meet customer demands.</p>
+        </div>
+        <div class="member">
+          <img src="image/customer.jpg" alt="Customer Service - Eshifumbi Furniture" />
+          <h3>Kuka Juma</h3>
+          <p>Customer Service</p>
+          <p>Juma is dedicated to providing excellent support and assistance to our valued customers at every stage of their shopping journey.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Eshifumbi Furniture. All rights reserved. | 
+    <a href="privacy.html">Privacy Policy</a> | 
+    <a href="terms.html">Terms of Use</a>
+  </footer>
+
+  <script>
+    // Dropdown toggle
+    const menuBtn = document.querySelector('.menu-btn');
+    const dropdown = document.getElementById('dropdown-menu');
+    menuBtn.addEventListener('click', () => {
+      const isShown = dropdown.classList.toggle('show');
+      dropdown.setAttribute('aria-hidden', !isShown);
+    });
+    document.addEventListener('click', (e) => {
+      if (!menuBtn.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove('show');
+        dropdown.setAttribute('aria-hidden', 'true');
+      }
+    });
+  </script>
+</body>
+</html>

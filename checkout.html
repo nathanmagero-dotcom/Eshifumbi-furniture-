@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eshifumbi Furniture - Checkout</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background-color: #f5f7fa;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #000;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 20;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .logo img {
+      height: 40px;
+      cursor: pointer;
+      filter: brightness(0) invert(1);
+    }
+
+    /* Navbar */
+    nav {
+      position: relative;
+    }
+    .menu-btn {
+      font-size: 2rem;
+      color: #fcbf49;
+      background: none;
+      border: none;
+      cursor: pointer;
+      user-select: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    .menu-btn:hover {
+      background-color: #222;
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 50px;
+      background-color: #000;
+      border: 1px solid #333;
+      border-radius: 5px;
+      min-width: 180px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      z-index: 100;
+    }
+    .dropdown.show {
+      display: block;
+    }
+    .dropdown a {
+      display: block;
+      padding: 12px 20px;
+      color: #fcbf49;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .dropdown a:hover {
+      background-color: #333;
+    }
+
+    /* Main Content */
+    main {
+      padding: 100px 30px 50px;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      color: #000;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    label {
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #000;
+    }
+    input, select {
+      padding: 12px 15px;
+      font-size: 1rem;
+      border: 1.5px solid #ccc;
+      border-radius: 6px;
+      transition: border-color 0.3s ease;
+      width: 100%;
+    }
+    input:focus, select:focus {
+      border-color: #fcbf49;
+      outline: none;
+    }
+
+    button[type="submit"] {
+      background-color: #fcbf49;
+      border: none;
+      padding: 15px 0;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #000;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+    button[type="submit"]:hover {
+      background-color: #e6ae3d;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000;
+      color: #fcbf49;
+      text-align: center;
+      padding: 20px 15px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #fcbf49;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      cursor: pointer;
+      z-index: 20;
+      transition: background-color 0.3s ease;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebe57;
+    }
+    .whatsapp-btn img {
+      width: 30px;
+      height: 30px;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      main {
+        padding: 100px 15px 40px;
+        margin: 10px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="image/bed1.jpg" alt="Eshifumbi Furniture Logo" /></a>
+    </div>
+    <nav>
+      <button class="menu-btn" aria-label="Open navigation menu">&#x22EE;</button>
+      <div class="dropdown" id="dropdown-menu" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="checkout.html">Shop</a>
+        <a href="checkout.html">Cart</a>
+        <a href="checkout.html">Order</a>
+        <a href="contact.html">Contact</a>
+        <a href="review.html">Review</a>
+        <a href="about.html">About</a>
+        <a href="terms.html">Terms</a>
+        <a href="return.html">Return</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+    <h1>Checkout</h1>
+    <form id="checkout-form" name="checkout" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" novalidate>
+      <!-- Netlify hidden inputs -->
+      <input type="hidden" name="form-name" value="checkout" />
+      <p style="display:none;">
+        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+      </p>
+
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Your full name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+2547XXXXXXXX" pattern="^\+2547\d{8}$" required />
+
+      <label for="address">Delivery Address</label>
+      <input type="text" id="address" name="address" placeholder="1234 Street, City, Country" required />
+
+      <label for="paymentMethod">Payment Method</label>
+      <select id="paymentMethod" name="paymentMethod" required>
+        <option value="" disabled selected>Select a payment method</option>
+        <option value="mpesa">M-Pesa</option>
+        <option value="card">Credit/Debit Card</option>
+        <option value="cash">Cash on Delivery</option>
+      </select>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </main>
+
+  <!-- WhatsApp button -->
+  <a 
+    href="https://wa.me/+254715246220" 
+    target="_blank" 
+    rel="noopener" 
+    class="whatsapp-btn" 
+    aria-label="Chat on WhatsApp"
+  >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" />
+  </a>
+
+  <footer>
+    &copy; 2025 Eshifumbi Furniture. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
+  </footer>
+
+  <script>
+    // Dropdown menu toggle
+    const menuBtn = document.querySelector('.menu-btn');
+    const dropdown = document.getElementById('dropdown-menu');
+
+    menuBtn.addEventListener('click', () => {
+      const isShown = dropdown.classList.toggle('show');
+      dropdown.setAttribute('aria-hidden', !isShown);
+    });
+
+    // Close dropdown if clicked outside
+    document.addEventListener('click', (e) => {
+      if (!menuBtn.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove('show');
+        dropdown.setAttribute('aria-hidden', 'true');
+      }
+    });
+
+    // Form validation & Netlify submission alert
+    const form = document.getElementById('checkout-form');
+    form.addEventListener('submit', function(e) {
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        alert('Please fill out all required fields correctly.');
+      } else {
+        // Let Netlify handle submission normally
+        // You can add custom behavior here if needed
+      }
+    });
+  </script>
+</body>
+</html>
