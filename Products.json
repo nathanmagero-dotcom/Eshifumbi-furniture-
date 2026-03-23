@@ -1,5 +1,5 @@
 [
-  {"id":"sofa1","category":"Sofa","name":"Modern Sofa Set","price":30000,"image":"image/sofa1.jpg"},
+  {"id":"sofa1","category":"Sofa","name":"Modern Sofa Set","price":120000,"image":"image/sofa1.jpg"},
   {"id":"sofa2","category":"Sofa","name":"Classic Leather Sofa","price":45000,"image":"image/sofa2.jpg"},
   {"id":"sofa3","category":"Sofa","name":"Corner Sofa","price":38000,"image":"image/sofa3.jpg"},
   {"id":"sofa4","category":"Sofa","name":"Fabric Sofa","price":25000,"image":"image/sofa4.jpg"},
