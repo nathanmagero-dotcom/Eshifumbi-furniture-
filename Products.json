@@ -8,7 +8,7 @@
   {"id":"sofa7","category":"Sofa","name":"6Seater Crescent sofa","price":94999,"image":"image/sofa7.jpg"},
   {"id":"sofa8","category":"Sofa","name":"Mid-Century Sofa","price":42000,"image":"image/sofa8.jpg"},
 
-  {"id":"bed1","category":"Bed","name":"Luco Beds","price":,"ima59999ge":"image/bed1.jpg"},
+  {"id":"bed1","category":"Bed","name":"Luco Beds","price":59999,"image/bed1.jpg"},
   {"id":"bed2","category":"Bed","name":"6x6 Marabou Bed","price":75000,"image":"image/bed2.jpg"},
   {"id":"bed3","category":"Bed","name":"Queen-Size Channel tuft BED","price":39999,"image":"image/bed3.jpg"},
   {"id":"bed4","category":"Bed","name":"Royal Comfort Panel Bed","price":55000,"image":"image/bed4.jpg"},
