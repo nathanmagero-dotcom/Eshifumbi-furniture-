@@ -1,11 +1,11 @@
 [
-  {"id":"sofa1","category":"Sofa","name":"Modern Sofa Set","price":120000,"image":"image/sofa1.jpg"},
-  {"id":"sofa2","category":"Sofa","name":"Classic Leather Sofa","price":45000,"image":"image/sofa2.jpg"},
-  {"id":"sofa3","category":"Sofa","name":"Corner Sofa","price":38000,"image":"image/sofa3.jpg"},
-  {"id":"sofa4","category":"Sofa","name":"Fabric Sofa","price":25000,"image":"image/sofa4.jpg"},
-  {"id":"sofa5","category":"Sofa","name":"Recliner Sofa","price":50000,"image":"image/sofa5.jpg"},
-  {"id":"sofa6","category":"Sofa","name":"Velvet Sofa","price":47000,"image":"image/sofa6.jpg"},
-  {"id":"sofa7","category":"Sofa","name":"Chaise Lounge Sofa","price":35000,"image":"image/sofa7.jpg"},
+  {"id":"sofa1","category":"Sofa","name":"modern sofa","price":120000,"image":"image/sofa1.jpg"},
+  {"id":"sofa2","category":"Sofa","name":"U Shaped Sofa","price":78000,"image":"image/sofa2.jpg"},
+  {"id":"sofa3","category":"Sofa","name":"Chesterfield","price":110000,"image":"image/sofa3.jpg"},
+  {"id":"sofa4","category":"Sofa","name":"Eshifumbi Classics","price":98000,"image":"image/sofa4.jpg"},
+  {"id":"sofa5","category":"Sofa","name":"Recliner Sofa","price":330000,"image":"image/sofa5.jpg"},
+  {"id":"sofa6","category":"Sofa","name":"Comfy L Sofa","price":49999,"image":"image/sofa6.jpg"},
+  {"id":"sofa7","category":"Sofa","name":"6Seater Crescent sofa","price":94999,"image":"image/sofa7.jpg"},
   {"id":"sofa8","category":"Sofa","name":"Mid-Century Sofa","price":42000,"image":"image/sofa8.jpg"},
 
   {"id":"bed1","category":"Bed","name":"Single Bed","price":20000,"image":"image/bed1.jpg"},
