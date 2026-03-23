@@ -60,7 +60,7 @@
   {"id":"tvstand5","category":"TV Stand","name":"Wooden TV Stand","price":28000,"image":"image/TV5.jpg"},
   {"id":"tvstand6","category":"TV Stand","name":"Corner TV Stand","price":23000,"image":"image/TV6.jpg"},
   {"id":"tvstand7","category":"TV Stand","name":"Storage TV Stand","price":29000,"image":"image/TV7.jpg"},
-  {"id":"tvstand8","category":"TV Stand","name":"Metal TV Stand","price":26000,"image":"image/TV8.jpg"}
+  {"id":"tvstand8","category":"TV Stand","name":"Metal TV Stand","price":26000,"image":"image/TV8.jpg"},
 
   {"id":"wardrobe1","category":"Wardrobe","name":"Modern Wooden Wardrobe","price":35000,"image":"image/wardrobe1.jpg"},
   {"id":"wardrobe2","category":"Wardrobe","name":"Sliding Door Wardrobe","price":42000,"image":"image/wardrobe2.jpg"},
