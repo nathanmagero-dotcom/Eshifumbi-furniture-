@@ -1,5 +1,5 @@
 [
-  {"id":"sofa1","category":"Sofa","name":"modern sofa","price":120000,"image":"image/sofa1.jpg"},
+  {"id":"sofa1","category":"Sofa","name":"Sectional U-Shaped sofa","price":130000,"image":"image/sofa1.jpg"},
   {"id":"sofa2","category":"Sofa","name":"U Shaped Sofa","price":78000,"image":"image/sofa2.jpg"},
   {"id":"sofa3","category":"Sofa","name":"Chesterfield","price":110000,"image":"image/sofa3.jpg"},
   {"id":"sofa4","category":"Sofa","name":"Eshifumbi Classics","price":98000,"image":"image/sofa4.jpg"},
